@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pramana Hotel & Resort</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+      <div align="center">
+        <img src="logo2.png" alt="Logo" width="200" height="200">
+      </div>
+            <br>
+      <nav>
+        <ul>
+          <li class="active"><a href="index.html">HOME</a></li>
+          <li><a href="facility.html">FACILITIES</a></li>
+          <li><a href="bookings.html">BOOK ROOM</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+<hr>
+<br>
+<div align="center">
+<table width="600px" height="600px">
+    <form name="guestform" action="insertdata.php" method="post" onsubmit="return myFunction()">
+
+        <tr align="center">
+          <td colspan="2" style="font-size:30px">BOOK ROOM</td>
+        </tr>
+        <tr>
+          <td class="mtd"><label>Name</td>
+          <td class="mid"><input type="text" name="name" placeholder="Enter Your Name" size="30"></td>
+        </tr>
+        <tr>
+          <td class="mtd"><label>Email Address</td>
+          <td class="mid"><input type="email" name="email" placeholder="Enter Your Email" size="30" ></td>
+        </tr>
+        <tr>
+          <td class="mtd"><label>Phone Number</td>
+          <td class="mid"><input type="tel" name="phone" placeholder="Enter Your Phone" size="30" ></td>
+        </tr>
+        <tr>
+          <td class="mtd"><label>Stay In Date</td>
+          <td class="mid"><input type="date" name="stay" size="30" ></td>
+        </tr>
+        <tr>
+          <td class="mtd"><label>Length Of Stay(Days)</td>
+          <td class="mid"><input type="text" name="lof" size="30" ></td>
+        </tr>
+        <tr>
+          <td class="mtd"><label>Room Type</td>
+          <td class="mid"><select name="room" >
+            <option value="Select" size="30">Select One</option>
+            <option value="Deluxe Room">Deluxe Room – $ 274</option>
+            <option value="Bedroom Pool Villa 1">1 Bedroom Pool Villa – $525</option>
+            <option value="Bedroom Pool Villa 2">2 Bedroom Pool Villa - $635</option>
+          </td>
+        </tr>
+        <tr>
+          <td class="mtd"><label>Additional Charge</td>
+          <td class="mid">
+            <input type="checkbox" name="extra"> Extra Bed - $80<br>
+            <input type="checkbox" name="airport"> Airport Shuttle - $40 - $40<br>
+            <input type="checkbox" name="tour"> Ubud Tour 1D - $80<br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td colspan="2"><input type="submit" value="submit"></td>
+        </tr>
+          </form>
+    </table>
+
+</div>
+
+<div class="footer" align="center">
+    <p>&copy 2017 Pramana Experience - All Rights Reserved.</p>
+  </div>
+</body>
+<script src="script.js">
+    </script>
+</html>
